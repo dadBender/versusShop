@@ -1,0 +1,21 @@
+@font-face {font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url("Inter-Regular.woff2") format("woff2");
+            }
+@font-face { font-family: "RF Dewi";
+    font-style: normal;
+    font-weight: 400;
+    src:
+    url("rf-dewi.woff2") format("woff2"),
+    url("rf-dewi.woff") format("woff");
+}
+@font-face {
+    font-family: 'RF Dewi';
+    src: local('RF Dewi Expanded Bold'), local('RF-Dewi-Expanded-Bold'),
+    url('RFDewiExpanded-Bold.woff2') format('woff2'),
+    url('RFDewiExpanded-Bold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}

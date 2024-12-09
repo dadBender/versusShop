@@ -1,0 +1,191 @@
+@media (max-width: 1200px) {
+    :root {
+        --ears: 30px;
+    }
+
+    .header {
+        position: relative;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding-bottom: 30px;
+        background-image: url("../images/background-header-mobile.png");
+    }
+
+   .header__address {
+      position: absolute;
+       width: 100%;
+       grid-column: 1 / -1;
+       grid-row: 1 / 5;
+       top: 0;
+       bottom: 0;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: repeat(4, auto);
+
+   }
+
+   .header__logo {
+       grid-column: 1 / -1;
+       grid-row: 1 / 2;
+   }
+
+   .header__telephone {
+       grid-column: 1 / 2;
+       grid-row: 4 / 5;
+       align-self: end;
+   }
+
+   .header__mail {
+       grid-column: 2 / 3;
+       grid-row: 4 / 5;
+       align-self: end;
+   }
+
+
+
+    .header__title {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        padding-top: 110px;
+    }
+
+    .header__title-text {
+        font-size: 35px;
+        line-height: 42px;
+    }
+
+    .button__header {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        justify-self: center;
+    }
+    .button__header {
+        margin: 0px;
+        margin-top: 50px;
+    }
+    .section__title {
+        font-size: 30px;
+    }
+    .section {
+        padding-inline: var(--ears);
+    }
+    .section__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card__subtitle {
+        font-size: 14px;
+    }
+
+    .video-thumbnail {
+        min-height: 350px;
+        border-radius: 15px;
+    }
+
+    .section__cooperation {
+        padding-top: 220px;
+    }
+
+    .section__cards-cooperation {
+        grid-template-columns: 1fr;
+    }
+
+    .section__info-cards {
+
+        padding-inline: 0px;
+    }
+
+    .section__info-card--application {
+        max-width: 545px;
+        justify-self: center;
+    }
+
+    .article__realization--image {
+        min-height: 270px;
+        border-radius: 15px;
+        width: 100%;
+    }
+
+    .section__title-realization {
+        font-size: 24px;
+    }
+
+    .article__realization {
+        padding-inline: 0;
+    }
+
+    .section__title-workflow {
+        font-size: 46px;
+    }
+
+    .section__icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .footer {
+        position : relative;
+        display: grid;
+        width: 100%;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+
+    }
+
+    .footer__address {
+        position: absolute;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-area: address;
+        grid-column: 1 / -1;
+        grid-row: 1 / 4;
+        display: grid;
+        grid-template-areas:
+                "logo logo"
+                ". ."
+                ". ."
+                ". ."
+                "mail telephone"
+    ;
+       inset: 0;
+        margin: 0;
+
+    }
+    .footer__telephone {
+        grid-area: telephone;
+        padding-top: 20px;
+        justify-self: end;
+    }
+
+    .footer__mail {
+        grid-area: mail;
+        padding-top: 20px;
+        justify-self: start;
+    }
+
+    .footer__logo {
+        grid-area: logo;
+    }
+
+    .button__footer {
+        grid-area: button-footer;
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+
+
+
+
+
+
+}
+
+@media (max-width: 800px) {
+    .section__info-cards {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
